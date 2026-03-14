@@ -1,0 +1,89 @@
+:root {
+  --background: hsl(40 33% 96%);
+  --foreground: hsl(30 10% 15%);
+
+  --card: hsl(40 30% 93%);
+  --card-foreground: hsl(30 10% 15%);
+
+  --popover: hsl(40 33% 96%);
+  --popover-foreground: hsl(30 10% 15%);
+
+  --primary: hsl(142 30% 28%);
+  --primary-foreground: hsl(40 33% 96%);
+
+  --secondary: hsl(30 30% 40%);
+  --secondary-foreground: hsl(40 33% 96%);
+
+  --muted: hsl(35 20% 88%);
+  --muted-foreground: 30 10% 40%;
+
+  --accent: hsl(28 60% 50%);
+  --accent-foreground: hsl(40 33% 96%);
+
+  --destructive: hsl(0 84.2% 60.2%);
+  --destructive-foreground: hsl(210 40% 98%);
+
+  --border: hsl(35 20% 82%);
+  --input: hsl(35 20% 82%);
+  --ring: hsl(142 30% 28%);
+
+  --radius: 0.5rem;
+
+  --safari-sand: hsl(40 33% 96%);
+  --safari-khaki: hsl(42 30% 78%);
+  --safari-olive: hsl(85 20% 35%);
+  --safari-earth: hsl(25 35% 30%);
+  --safari-warm: #cc7a33;
+  --safari-dark: hsl(30 10% 15%);
+  --safari-cream: hsl(38 40% 92%);
+
+  --sidebar-background: hsl(0 0% 98%);
+  --sidebar-foreground: hsl(240 5.3% 26.1%);
+  --sidebar-primary: hsl(240 5.9% 10%);
+  --sidebar-primary-foreground: hsl(0 0% 98%);
+  --sidebar-accent: hsl(240 4.8% 95.9%);
+  --sidebar-accent-foreground: 240 5.9% 10%;
+  --sidebar-border: hsl(220 13% 91%);
+  --sidebar-ring: hsl(217.2 91.2% 59.8%);
+}
+
+.card-container .card {
+  background-color: var(--card);
+  width: 22rem;
+  height: 16rem;
+  border-radius: var(--radius);
+  box-shadow: 0 0 1px black;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: center;
+}
+.card-container .card img {
+  width: 60px;
+}
+.card-container .card h1 {
+  text-align: center;
+  font-size: 1.2rem;
+}
+.card-container .card p {
+  text-align: center;
+  color: var(--sidebar-foreground);
+  width: 90%;
+}
+@media (min-width: 300px) and (max-width: 720px) {
+  .card-container .card {
+    background-color: var(--card);
+    width: 22rem;
+    min-width: 100%;
+    border-radius: var(--radius);
+    box-shadow: 0 0 1px black;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: center;
+  }
+}
