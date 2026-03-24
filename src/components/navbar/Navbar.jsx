@@ -32,7 +32,7 @@ const Navbar = () => {
           <hr />
           <Link to="/contact-us">
             <li className="link">
-              <button>BOOK A SAFARI</button>
+              <button>Book Your Safari</button>
             </li>
           </Link>
         </ul>
